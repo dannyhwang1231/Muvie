@@ -1,0 +1,169 @@
+            #grid {
+                display: grid;
+                justify-content: center;
+                grid-gap: 20px;
+                grid-row-gap:50px;
+            }
+            
+            #menu-bar {
+                grid-area: header;
+                background-color: black;
+            }
+            
+            #main {
+                grid-area: main;
+               
+            }
+
+            #raiting{
+                grid-area: rating;
+            }
+
+            #first {
+                grid-area: first;
+                
+                
+            }
+
+            #second {
+                grid-area: second;
+                
+            }
+            
+            #third{ 
+                grid-area: third;
+               
+            }
+
+            #fourth{
+                grid-area: fourth;
+               
+            }
+
+            #fifth{
+                grid-area: fifth;
+                
+            }
+
+            #sixth{
+                grid-area: sixth;
+           
+            }
+
+            #seventh{
+                grid-area: seventh;
+               
+            }
+
+            #eighth{
+                grid-area: eighth;
+               
+            }
+
+            #ninth{
+                grid-area: ninth;
+               
+            }
+
+            #tenth{
+                grid-area: tenth;      
+            }
+
+            p1
+            {font-size:25px;
+            font-family:sans-serif;
+            }
+
+            p2{
+            font-size:15px;
+            font-family:sans-serif;
+            }
+            
+            @media only screen and (min-width:1281px) {
+                #grid {
+                    grid-template-columns: repeat(8,145px);
+                    grid-template-rows: repeat(11,145px);
+                    grid-template-areas: 
+                        "header     header      header      header      header      header  header  header"
+                        "main       main        main        main        main        main    first   first"
+                        "main       main        main        main        main        main    second  second"
+                        "main       main        main        main        main        main     third  third"
+                        "main       main        main        main        main        main     fourth fourth"
+                        "main       main        main        main        main        main     fifth  fifth"
+                        ".          .           .           .           .           .        sixth  sixth"
+                        ".          .           .           .           .           .       seventh seventh"
+                        ".          .           .           .           .           .        eighth  eighth"
+                        ".          .           .           .           .           .        ninth   ninth"
+                        ".          .           .           .           .           .        tenth   tenth"
+                        
+                }
+            }
+
+
+        @media only screen and (max-width: 1280px) {
+                #grid {
+                    grid-template-columns: repeat(8, 145px);
+                    grid-template-rows: repeat(11, 145px);
+                    grid-template-areas: 
+                        "header     header      header      header      header      header  header  header"
+                        "main       main        main        main        main        main    first   first"
+                        "main       main        main        main        main        main    second  second"
+                        "main       main        main        main        main        main     third  third"
+                        "main       main        main        main        main        main     fourth fourth"
+                        "main       main        main        main        main        main     fifth  fifth"
+                        "rating     rating      rating      rating      rating      rating   sixth  sixth"
+                        ".          .           .           .           .           .       seventh seventh"
+                        ".          .           .           .           .           .        eighth  eighth"
+                        ".          .           .           .           .           .        ninth   ninth"
+                        ".          .           .           .           .           .        tenth   tenth"
+                        
+                }
+            }
+
+
+
+            @media only screen and (max-width: 720px) {
+                #grid {
+                    grid-template-columns:repeat(4, 25%);
+                    grid-template-rows:repeat(11, 70px);
+                    grid-template-areas: 
+                        "header      header   header  header"
+                        "main        main     main    first"
+                        "main        main     main    second"
+                        "main        main     main    third"
+                        "main        main     main    fourth"
+                        ".           .        .       fifth"
+                        ".           .        .       sixth"
+                        ".           .        .       seventh"
+                        ".           .        .       eighth"
+                        ".           .        .       ninth"
+                        ".           .        .       tenth"
+                } 
+            }
+
+
+            @media only screen and (max-width:320px) {
+                #grid {
+                    grid-template-columns:repeat(2, 50%);
+                    grid-template-rows:repeat(15, 40px);
+                    grid-template-areas: 
+                        "header     header"
+                        "main       main"
+                        "main       main"
+                        "main       main"
+                        "main       main"
+                        "first      ."
+                        "second     ."
+                        "third      ."
+                        "fourth     ."
+                        "fifth      ."
+                        "sixth      ."
+                        "seventh    ."
+                        "eighth     ."
+                        "ninth      ."
+                        "tenth      ."
+                }
+            }
+
+
+
