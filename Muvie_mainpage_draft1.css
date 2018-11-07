@@ -1,0 +1,128 @@
+#grid {
+    display:grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+}
+
+/*searchbar*/
+#menu-bar {
+    grid-area: header;
+    background-color: black;
+}
+
+/*Tumbnails*/            
+#thumbnail-one {
+    grid-area: one;
+}
+
+#thumbnail-two {
+    grid-area: two;
+}
+
+#thumbnail-three {
+    grid-area: three;
+}
+
+#thumbnail-four {
+    grid-area: four;
+}
+
+#thumbnail-five {
+    grid-area: five;
+}
+
+#thumbnail-six {
+    grid-area: six;
+}
+
+#thumbnail-seven {
+    grid-area: seven;
+}
+
+#thumbnail-eight {
+    grid-area: eight;
+}
+
+#thumbnail-nine {
+    grid-area: nine;
+}
+
+/*breakpoints*/
+@media only screen and (min-width: 1281px) {
+
+    .card {
+    min-height: 360px;
+        }
+
+    #grid{
+        grid-template-columns: repeat(6, 200px);
+        grid-template-areas: 
+            "header header header header header header"
+            "one    one    two    two    three  three"
+            "one    one    two    two    three  three"
+            "four   four   five   five   six    six"
+            "four   four   five   five   six    six"
+            "seven  seven  eight  eight  nine   nine"
+            "seven  seven  eight  eight  nine   nine"
+        }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    #grid{
+        grid-template-columns: repeat(6, 15%);
+        grid-template-areas: 
+            "header header header header header header"
+            "one    one    two    two    three  three"
+            "one    one    two    two    three  three"
+            "four   four   five   five   six    six"
+            "four   four   five   five   six    six"
+            "seven  seven  eight  eight  nine   nine"
+            "seven  seven  eight  eight  nine   nine"
+        }
+}
+
+@media only screen and (max-width: 720px) {
+    
+    #grid{
+        grid-template-columns: repeat(4, 160px);
+        grid-template-areas: 
+            "header header header header"
+            "one    one    two    two"
+            "one    one    two    two"
+            "three  three  four   four"
+            "three  three  four   four"
+            "five   five   six    six"
+            "five   five   six    six"
+            "seven  seven  eight  eight"
+            "seven  seven  eight  eight"
+        }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    #grid{
+        grid-template-columns: repeat(2, 140px);
+        grid-template-areas: 
+            "header header"
+            "one    one"
+            "one    one"
+            "two    two"
+            "two    two"
+            "three  three"
+            "three  three"
+            "four   four"
+            "four   four"
+            "five   five"
+            "five   five"
+            "six    six"
+            "six    six"
+            "seven  seven"
+            "seven  seven"
+            "eight  eight"
+            "eight  eight"
+            "nine   nine"
+            "nine   nine"
+        }
+}
