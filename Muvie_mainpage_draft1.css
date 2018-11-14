@@ -70,6 +70,11 @@
 
 @media only screen and (max-width: 1280px) {
 
+    .card {
+    min-height: 300px;
+        }
+
+
     #grid{
         grid-template-columns: repeat(6, 15%);
         grid-template-areas: 
@@ -84,8 +89,16 @@
 }
 
 @media only screen and (max-width: 720px) {
+
+    #thumbnail-nine {
+        display: none;
+    }
+    .card {
+    min-height: 320px;
+        }
     
     #grid{
+           
         grid-template-columns: repeat(4, 160px);
         grid-template-areas: 
             "header header header header"
