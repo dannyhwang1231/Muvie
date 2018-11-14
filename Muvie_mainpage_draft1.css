@@ -146,7 +146,22 @@
         grid-template-areas:
             "oneA oneA twoA twoA threeA threeA"
             "oneA oneA twoA twoA threeA threeA"
+            "fourA fourA fiveA fiveA sixA sixA"
+            "fourA fourA fiveA fiveA sixA sixA"
+            "sevenA sevenA eightA eightA nineA nineA"
+            "sevenA sevenA eightA eightA nineA nineA"
     }
+    .video_content_two {
+        grid-template-columns: repeat(6, 200px);
+        grid-template-areas:
+            "oneB oneB twoB twoB threeB threeB"
+            "oneB oneB twoB twoB threeB threeB"
+            "fourB fourB fiveB fiveB sixB sixB"
+            "fourB fourB fiveB fiveB sixB sixB"
+            "sevenB sevenB eightB eightB nineB nineB"
+            "sevenB sevenB eightB eightB nineB nineB"
+    }
+    
 }
 
 @media only screen and (max-width: 1280px) {
