@@ -48,6 +48,81 @@
     grid-area: nine;
 }
 
+/*Tumbnails_A*/            
+#thumbnail-oneA {
+    grid-area: oneA;
+}
+
+#thumbnail-twoA {
+    grid-area: twoA;
+}
+
+#thumbnail-threeA {
+    grid-area: threeA;
+}
+
+#thumbnail-fourA {
+    grid-area: fourA;
+}
+
+#thumbnail-fiveA {
+    grid-area: fiveA;
+}
+
+#thumbnail-sixA {
+    grid-area: sixA;
+}
+
+#thumbnail-sevenA {
+    grid-area: sevenA;
+}
+
+#thumbnail-eightA {
+    grid-area: eightA;
+}
+
+#thumbnail-nineA {
+    grid-area: nineA;
+}
+
+/*Tumbnails_B*/            
+#thumbnail-oneB {
+    grid-area: oneB;
+}
+
+#thumbnail-twoB {
+    grid-area: twoB;
+}
+
+#thumbnail-threeB {
+    grid-area: threeB;
+}
+
+#thumbnail-fourB {
+    grid-area: fourB;
+}
+
+#thumbnail-fiveB {
+    grid-area: fiveB;
+}
+
+#thumbnail-sixB {
+    grid-area: sixB;
+}
+
+#thumbnail-sevenB {
+    grid-area: sevenB;
+}
+
+#thumbnail-eightB {
+    grid-area: eightB;
+}
+
+#thumbnail-nineB {
+    grid-area: nineB;
+}
+
+
 /*breakpoints*/
 @media only screen and (min-width: 1281px) {
 
@@ -66,6 +141,12 @@
             "seven  seven  eight  eight  nine   nine"
             "seven  seven  eight  eight  nine   nine"
         }
+    .video_content_one {
+        grid-template-columns: repeat(6, 200px);
+        grid-template-areas:
+            "oneA oneA twoA twoA threeA threeA"
+            "oneA oneA twoA twoA threeA threeA"
+    }
 }
 
 @media only screen and (max-width: 1280px) {
