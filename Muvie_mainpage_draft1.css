@@ -5,6 +5,22 @@
     grid-template-rows: auto;
 }
 
+#video_content_one{
+    display:grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    margin-top:10px;
+}
+
+#video_content_two{
+    display:grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    margin-top:10px;
+}
+
 /*searchbar*/
 #menu-bar {
     grid-area: header;
@@ -48,6 +64,81 @@
     grid-area: nine;
 }
 
+/*Tumbnails_A*/            
+#thumbnail-oneA {
+    grid-area: oneA;
+}
+
+#thumbnail-twoA {
+    grid-area: twoA;
+}
+
+#thumbnail-threeA {
+    grid-area: threeA;
+}
+
+#thumbnail-fourA {
+    grid-area: fourA;
+}
+
+#thumbnail-fiveA {
+    grid-area: fiveA;
+}
+
+#thumbnail-sixA {
+    grid-area: sixA;
+}
+
+#thumbnail-sevenA {
+    grid-area: sevenA;
+}
+
+#thumbnail-eightA {
+    grid-area: eightA;
+}
+
+#thumbnail-nineA {
+    grid-area: nineA;
+}
+
+/*Tumbnails_B*/            
+#thumbnail-oneB {
+    grid-area: oneB;
+}
+
+#thumbnail-twoB {
+    grid-area: twoB;
+}
+
+#thumbnail-threeB {
+    grid-area: threeB;
+}
+
+#thumbnail-fourB {
+    grid-area: fourB;
+}
+
+#thumbnail-fiveB {
+    grid-area: fiveB;
+}
+
+#thumbnail-sixB {
+    grid-area: sixB;
+}
+
+#thumbnail-sevenB {
+    grid-area: sevenB;
+}
+
+#thumbnail-eightB {
+    grid-area: eightB;
+}
+
+#thumbnail-nineB {
+    grid-area: nineB;
+}
+
+
 /*breakpoints*/
 @media only screen and (min-width: 1281px) {
 
@@ -60,44 +151,106 @@
         grid-template-areas: 
             "header header header header header header"
             "one    one    two    two    three  three"
-            "one    one    two    two    three  three"
             "four   four   five   five   six    six"
-            "four   four   five   five   six    six"
-            "seven  seven  eight  eight  nine   nine"
             "seven  seven  eight  eight  nine   nine"
         }
+    
+    #video_content_one {
+        grid-template-columns: repeat(6, 200px);
+        grid-template-areas:
+            "oneA   oneA    twoA   twoA   threeA threeA"
+            "fourA  fourA   fiveA  fiveA  sixA   sixA"
+            "sevenA sevenA  eightA eightA nineA  nineA"
+    }
+    
+    #video_content_two {
+        grid-template-columns: repeat(6, 200px);
+        grid-template-areas:
+            "oneB   oneB   twoB   twoB   threeB threeB"
+            "fourB  fourB  fiveB  fiveB  sixB   sixB"
+            "sevenB sevenB eightB eightB nineB  nineB"
+    }
+
+    
+    
 }
 
 @media only screen and (max-width: 1280px) {
+
+    .card {
+    min-height: 300px;
+        }
+
 
     #grid{
         grid-template-columns: repeat(6, 15%);
         grid-template-areas: 
             "header header header header header header"
             "one    one    two    two    three  three"
-            "one    one    two    two    three  three"
             "four   four   five   five   six    six"
-            "four   four   five   five   six    six"
-            "seven  seven  eight  eight  nine   nine"
             "seven  seven  eight  eight  nine   nine"
         }
+    #video_content_one {
+        grid-template-columns: repeat(6, 15%);
+        grid-template-areas:
+            "oneA   oneA    twoA   twoA   threeA threeA"
+            "fourA  fourA   fiveA  fiveA  sixA   sixA"
+            "sevenA sevenA  eightA eightA nineA  nineA"
+    }
+    
+    #video_content_two {
+        grid-template-columns: repeat(6, 15%);
+        grid-template-areas:
+            "oneB   oneB   twoB   twoB   threeB threeB"
+            "fourB  fourB  fiveB  fiveB  sixB   sixB"
+            "sevenB sevenB eightB eightB nineB  nineB"
+    }
+
 }
 
 @media only screen and (max-width: 720px) {
+
+    #thumbnail-nine {
+        display: none;
+    }
+    #thumbnail-nineA{
+        display: none;
+    }
+    #thumbnail-nineB{
+        display:none;
+    }
+    .card {
+    min-height: 320px;
+        }
     
     #grid{
+           
         grid-template-columns: repeat(4, 160px);
         grid-template-areas: 
             "header header header header"
             "one    one    two    two"
-            "one    one    two    two"
-            "three  three  four   four"
             "three  three  four   four"
             "five   five   six    six"
-            "five   five   six    six"
-            "seven  seven  eight  eight"
             "seven  seven  eight  eight"
         }
+    
+    #video_content_one {
+        grid-template-columns: repeat(4, 160px);
+        grid-template-areas:
+            "oneA   oneA    twoA   twoA"
+            "threeA threeA  fourA  fourA"
+            "fiveA  fiveA   sixA   sixA"
+            "sevenA sevenA  eightA eightA"
+    }
+    
+    #video_content_two {
+        grid-template-columns: repeat(4, 160px);
+        grid-template-areas:
+            "oneB   oneB    twoB   twoB"
+            "threeB threeB  fourB  fourB"
+            "fiveB  fiveB   sixB   sixB"
+            "sevenB sevenB  eightB eightB"
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -107,22 +260,41 @@
         grid-template-areas: 
             "header header"
             "one    one"
-            "one    one"
-            "two    two"
             "two    two"
             "three  three"
-            "three  three"
-            "four   four"
             "four   four"
             "five   five"
-            "five   five"
-            "six    six"
             "six    six"
             "seven  seven"
-            "seven  seven"
             "eight  eight"
-            "eight  eight"
-            "nine   nine"
             "nine   nine"
         }
-}
+    
+    #video_content_one {
+        grid-template-columns: repeat(2, 140px);
+        grid-template-areas:
+            "oneA   oneA"    
+            "twoA   twoA"
+            "threeA threeA"  
+            "fourA  fourA"
+            "fiveA  fiveA"   
+            "sixA   sixA"
+            "sevenA sevenA"  
+            "eightA eightA"
+            "nineA  nineA"
+    }
+    
+    #video_content_two {
+        grid-template-columns: repeat(2, 140px);
+        grid-template-areas:
+            "oneB   oneB"    
+            "twoB   twoB"
+            "threeB threeB"  
+            "fourB  fourB"
+            "fiveB  fiveB"   
+            "sixB   sixB"
+            "sevenB sevenB"  
+            "eightB eightB"
+            "nineB  nineB"
+        }
+    }
