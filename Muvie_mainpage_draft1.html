@@ -12,13 +12,45 @@
     </head>
     
     <body>
-        <div id="grid">
         <!--menu bar-->
             <!--git branch test-->
+        <div class="sticky-top">
             <div id="menu-bar">
-            
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Müvie</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Profile<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Trending Now</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Concerts</a>
+                                    <a class="dropdown-item" href="#">Studio Live</a>
+                                    <a class="dropdown-item" href="#">Busking</a>
+                                    <a class="dropdown-item" href="#">Miscellaneous</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Music Videos</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
             </div>
+        </div>
         <!--video thumbnails-->
+        <div class="loader">
+            <div id="video_content">
                 <div id="thumbnail-one">
                     <a href="https://youtu.be/c3L1byBs_Ic"  target="_blank">
                         <div class="card">
@@ -119,8 +151,9 @@
                     </a>
                 </div>
             </div>
+        </div>
 <!--infinite scroll 1st -->
-        
+    <div class="loader">
         <div id="video_content_one">    
             <div id="thumbnail-oneA">
                     <a href="https://youtu.be/c3L1byBs_Ic"  target="_blank">
@@ -222,9 +255,9 @@
                     </a>
                 </div>
             </div>
-            
+        </div>    
 <!-- infinite scroll 2nd -->
-            
+    <div class="loader">
         <div id="video_content_two">    
             <div id="thumbnail-oneB">
                     <a href="https://youtu.be/c3L1byBs_Ic"  target="_blank">
@@ -326,7 +359,14 @@
                     </a>
                 </div>
             </div>        
-            
+         </div>         
+           <!--Load More + Back To Top-->
+
+<a href="#" id="loadMore">Load More</a>     
+<p class="totop"> 
+    <a href="#top">Back to top</a> 
+</p>
+
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -335,25 +375,41 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <script>
-        $(document).ready(
-            function(){
-        
-                // your javascript code goes here
-                
-                $(window).on('scroll', function() {
-    var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 150;             // set to whatever you want it to be
+/*
+	Load more content with jQuery - May 21, 2013
+	(c) 2013 @ElmahdiMahmoud
+*/   
 
-    if(y_scroll_pos > scroll_pos_test) {
-        
-        
-        //do stuff
+$(function () {
+    $(".loader").slice(0, 1).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".loader:hidden").slice(0, 1).slideDown();
+        if ($(".loader:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+});
+
+$('a[href=#top]').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+        $('.totop a').fadeIn();
+    } else {
+        $('.totop a').fadeOut();
     }
 });
-                
-                
-            }
-        );
+
+        </script>
             
     </body>
     
