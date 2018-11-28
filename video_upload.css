@@ -115,10 +115,10 @@ p2{
                 #grid {
                     grid-template-columns: repeat(2,350px);
                     grid-template-rows: repeat(13,40px);
-                    padding-left: 600px;
-                    padding-right: 600px;
+                    padding-left:100px;
+                    padding-right:100px;
                     grid-template-areas: 
-                        "menu-bar   menu-bar"
+                        "menu-bar    menu-bar"
                         "upload      upload"
                         "upload      upload"
                         "upload      upload"
@@ -140,8 +140,6 @@ p2{
                 #grid {
                    grid-template-columns: repeat(2,150px);
                     grid-template-rows: repeat(13,40px);
-                    padding-left: 600px;
-                    padding-right: 600px;
                     grid-template-areas: 
                         "menu-bar   menu-bar"
                         "upload      upload"
