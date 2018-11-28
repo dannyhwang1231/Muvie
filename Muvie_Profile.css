@@ -1,6 +1,7 @@
 #content-grid {
     display: grid;
     justify-content: center;
+    grid-gap: 10px;
 }
 
 #video-content {
@@ -14,10 +15,27 @@
     grid-area: menu-bar;
 }
 
+/*Channel Name*/
+#channel-name {
+    grid-area: channel;
+}
+
+/*Channel Description*/
+
+#channel-description {
+    grid-area: description;
+}
+
 /*Cover Photo*/
 
 #cover-photo {
     grid-area: header;
+}
+
+/*Upload Button*/
+
+#upload-button {
+    grid-area: upload;
 }
 
 /*My Uploads*/
@@ -126,6 +144,9 @@
         grid-template-rows:200px;
         grid-template-areas: 
             "header header header header header header"
+            ". channel channel . . upload"
+            ". description description . . ."
+            
         }
 
 @media only screen and (min-width: 1281px) {
