@@ -1,0 +1,133 @@
+body {
+    display: grid;
+}
+
+#video-content {
+    color: yellow;
+}
+
+/*div organization*/
+
+.video-content {
+    justify-content: center;
+}
+
+/*Menu Bar*/
+#menu-bar {
+    grid-area: menu-bar;
+}
+
+/*Cover Photo*/
+
+#cover-photo {
+    grid-area: header;
+}
+
+/*My Uploads*/
+
+#upload-one {
+    grid-area: Uone;
+}
+
+#upload-two {
+    grid-area: Utwo;
+}
+
+#upload-three {
+    grid-area: Uthree;
+}
+
+#upload-four {
+    grid-area: Ufour;
+}
+
+#upload-five {
+    grid-area: Ufive;
+}
+
+#upload-six {
+    grid-area: Usix;
+}
+
+#upload-seven {
+    grid-area: Useven;
+}
+
+/*My Playlist*/
+
+#playlist-one {
+    grid-area: Pone;
+}
+
+#playlist-two {
+    grid-area: Ptwo;
+}
+
+#playlist-three {
+    grid-area: Pthree;
+}
+
+#playlist-four {
+    grid-area: Pfour;
+}
+
+#playlist-five {
+    grid-area: Pfive;
+}
+
+#playlist-six {
+    grid-area: Psix;
+}
+
+#playlist-seven {
+    grid-area: Pseven;
+}
+
+/*following*/
+
+#following-one {
+    grid-area: Fone;
+}
+
+#following-two {
+    grid-area: Ftwo;
+}
+
+#following-three {
+    grid-area: Fthree;
+}
+
+#following-four {
+    grid-area: Ffour;
+}
+
+#following-five {
+    grid-area: Ffive;
+}
+
+#following-six {
+    grid-area: Fsix;
+}
+
+#following-seven {
+    grid-area: Fseven;
+}
+
+/*Breakpoints*/
+
+@media only screen and (min-width: 1281px) {
+
+    .card {
+    min-height: 360px;
+        }
+
+    #video_content{
+        grid-template-columns: repeat(6, 200px);
+        grid-template-areas: 
+            "header header header header header header"
+            "one    one    two    two    three  three"
+            "four   four   five   five   six    six"
+            "seven  seven  eight  eight  nine   nine"
+        }
+    
+}
