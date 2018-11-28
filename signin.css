@@ -8,7 +8,6 @@ body {
     color: black;
     font-family: Arial;
   font-size: 30px;
-  padding: 600px;
   padding-top: 300px;
   padding-bottom: 400px;
 }
@@ -84,6 +83,7 @@ height: 20px;
   padding-top: 300px;
   padding-bottom: 300px;
   border: 2px solid white;
+  align-content: horizontal;
 }
 
 #description {
@@ -111,3 +111,7 @@ height: 20px;
         width: 25%;
     }
 }
+
+
+
+

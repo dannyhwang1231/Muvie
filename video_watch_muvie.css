@@ -1,33 +1,152 @@
-            #grid {
+                #grid {
                 display: grid;
                 justify-content: center;
-                grid-gap: 20px;
-                grid-row-gap:50px;
+                grid-gap: 15px;
+                grid-row-gap: 50px;
+                padding-left: 5%;
+                padding-right: 5%;
             }
             
             #menu-bar {
-                grid-area: header;
+                grid-area: menu-bar;
                 background-color: black;
+            }
+
+            #rating {
+                grid-area: rating;
+                background-color:aqua;
             }
             
             #main {
                 grid-area: main;
-               
+                border: 2px gray;
             }
 
-            #raiting{
+
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+*:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.text-center {text-align:center;}
+
+a {
+  color: tomato;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2196f3;
+}
+
+pre {
+display: block;
+padding: 9.5px;
+margin: 0 0 10px;
+font-size: 13px;
+line-height: 1.42857143;
+color: #333;
+word-break: break-all;
+word-wrap: break-word;
+background-color: #F5F5F5;
+border: 1px solid #CCC;
+border-radius: 4px;
+}
+
+.new-react-version {
+  padding: 20px 20px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.new-react-version .react-svg-logo {
+  text-align: center;
+  max-width: 60px;
+  margin: 20px auto;
+  margin-top: 0;
+}
+
+
+.success-box {
+  margin:50px 0;
+  padding:10px 10px;
+  border:1px solid #eee;
+  background:#f9f9f9;
+}
+
+.success-box img {
+  margin-right:10px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.success-box > div {
+  vertical-align:top;
+  display:inline-block;
+  color:#888;
+}
+
+
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+  
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
+  
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size:2.5em; /* Change the size of the stars */
+  color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color:#FF912C;
+}
+
+
+
+            #rating{
                 grid-area: rating;
             }
 
             #first {
                 grid-area: first;
-                
-                
+                  
             }
 
             #second {
                 grid-area: second;
-                
+                border: 90px gray;
             }
             
             #third{ 
@@ -70,7 +189,7 @@
             }
 
             p1
-            {font-size:25px;
+            {font-size:20px;
             font-family:sans-serif;
             }
 
@@ -78,23 +197,25 @@
             font-size:15px;
             font-family:sans-serif;
             }
-            
+
+
             @media only screen and (min-width:1281px) {
                 #grid {
-                    grid-template-columns: repeat(8,145px);
-                    grid-template-rows: repeat(11,145px);
+                    grid-row-gap: 30px;
+                    grid-template-columns: repeat(8,140px);
+                    grid-template-rows: 50px, repeat(10,150px);
                     grid-template-areas: 
-                        "header     header      header      header      header      header  header  header"
-                        "main       main        main        main        main        main    first   first"
-                        "main       main        main        main        main        main    second  second"
-                        "main       main        main        main        main        main     third  third"
-                        "main       main        main        main        main        main     fourth fourth"
-                        "main       main        main        main        main        main     fifth  fifth"
-                        ".          .           .           .           .           .        sixth  sixth"
-                        ".          .           .           .           .           .       seventh seventh"
-                        ".          .           .           .           .           .        eighth  eighth"
-                        ".          .           .           .           .           .        ninth   ninth"
-                        ".          .           .           .           .           .        tenth   tenth"
+                        "menu-bar   menu-bar    menu-bar    menu-bar    menu-bar    menu-bar  menu-bar  menu-bar"
+                        "main       main        main        main        main        main      first     first"
+                        "main       main        main        main        main        main      second    second"
+                        "main       main        main        main        main        main      third     third"
+                        "rating     rating      rating      rating      rating      rating      fourth    fourth"
+                        ".          .           .           .           .           .           fifth     fifth"
+                        ".          .           .           .           .           .          sixth     sixth"
+                        ".          .           .           .           .           .         seventh   seventh"
+                        ".          .           .           .           .           .         eighth    eighth"
+                        ".          .           .           .           .           .         ninth     ninth"
+                        ".          .           .           .           .           .         tenth     tenth"
                         
                 }
             }
@@ -102,20 +223,21 @@
 
         @media only screen and (max-width: 1280px) {
                 #grid {
-                    grid-template-columns: repeat(8, 145px);
-                    grid-template-rows: repeat(11, 145px);
+                    grid-row-gap: 30px;
+                    grid-template-columns: repeat(8, 140px);
+                    grid-template-rows: 50px, repeat(10, 150px);
                     grid-template-areas: 
-                        "header     header      header      header      header      header  header  header"
-                        "main       main        main        main        main        main    first   first"
-                        "main       main        main        main        main        main    second  second"
-                        "main       main        main        main        main        main     third  third"
-                        "main       main        main        main        main        main     fourth fourth"
-                        "main       main        main        main        main        main     fifth  fifth"
-                        "rating     rating      rating      rating      rating      rating   sixth  sixth"
-                        ".          .           .           .           .           .       seventh seventh"
-                        ".          .           .           .           .           .        eighth  eighth"
-                        ".          .           .           .           .           .        ninth   ninth"
-                        ".          .           .           .           .           .        tenth   tenth"
+                        "menu-bar   menu-bar    menu-bar    menu-bar    menu-bar    menu-bar  menu-bar  menu-bar"
+                        "main       main        main        main        main        main      first     first"
+                        "main       main        main        main        main        main      second    second"
+                        "main       main        main        main        main        main      third     third"
+                        "rating     rating      rating      rating      rating      rating      fourth    fourth"
+                        ".          .           .           .           .           .           fifth     fifth"
+                        ".          .           .           .           .           .          sixth     sixth"
+                        ".          .           .           .           .           .         seventh   seventh"
+                        ".          .           .           .           .           .         eighth    eighth"
+                        ".          .           .           .           .           .         ninth     ninth"
+                        ".          .           .           .           .           .         tenth     tenth"
                         
                 }
             }
@@ -124,34 +246,53 @@
 
             @media only screen and (max-width: 720px) {
                 #grid {
+                    margin:10px;
+                    grid-gap:20px;
                     grid-template-columns:repeat(4, 25%);
-                    grid-template-rows:repeat(11, 70px);
+                    grid-template-rows:30px, repeat(10, 70px);
                     grid-template-areas: 
-                        "header      header   header  header"
-                        "main        main     main    first"
-                        "main        main     main    second"
-                        "main        main     main    third"
-                        "main        main     main    fourth"
-                        ".           .        .       fifth"
-                        ".           .        .       sixth"
-                        ".           .        .       seventh"
-                        ".           .        .       eighth"
-                        ".           .        .       ninth"
-                        ".           .        .       tenth"
+                        "menu-bar    menu-bar menu-bar  menu-bar"
+                        "main        main     main      first"
+                        "main        main     main      second"
+                        "main        main     main      third"
+                        "main        main     main      fourth"
+                        "rating      rating   rating    fifth"
+                        ".           .        .         sixth"
+                        ".           .        .         seventh"
+                        ".           .        .         eighth"
+                        ".           .        .         ninth"
+                        ".           .        .         tenth"
                 } 
+                
+            p1
+            {font-size:20px;
+            font-family:sans-serif;
+            }
+
+            p2{
+            font-size:13px;
+            font-family:sans-serif;
+            }
+                
+            #rating{
+            margin-top: 40px;        
+                }
             }
 
 
             @media only screen and (max-width:320px) {
                 #grid {
+                    margin:auto;
+                    grid-gap:10px;
                     grid-template-columns:repeat(2, 50%);
-                    grid-template-rows:repeat(15, 40px);
+                    grid-template-rows:20px, repeat(14, 40px);
                     grid-template-areas: 
-                        "header     header"
+                        "menu-bar   menu-bar"
                         "main       main"
                         "main       main"
                         "main       main"
                         "main       main"
+                        "rating     rating"
                         "first      ."
                         "second     ."
                         "third      ."
@@ -163,7 +304,17 @@
                         "ninth      ."
                         "tenth      ."
                 }
+                
+            p1
+            {font-size:20px;
+            font-family:sans-serif;
             }
 
+            p2{
+            font-size:13px;
+            font-family:sans-serif;
+            }
+            }
+            }
 
 

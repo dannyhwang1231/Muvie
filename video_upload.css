@@ -1,0 +1,166 @@
+#grid{
+    display: grid;
+    justify-content:center;
+    grid-row-gap: 20px;
+}
+
+#menu-bar{
+    grid-area: menu-bar;
+    background-color:black;
+}
+
+#upload{
+    grid-area: upload;
+    border-color:gray;
+    border-style: dotted;
+    border-color: gray;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#title{
+    grid-area:title;
+    text-align:left;
+    font-family: sans-serif;
+}
+
+#venue{
+    grid-area:venue;
+    text-align:left;
+    font-family: sans-serif;
+    
+}
+
+#description{
+    grid-area:description;
+    text-align:left;
+    font-family: sans-serif;
+    padding-top:10px;
+    border-style:solid;
+    border-width: thin;
+    border-color:lightgray;
+    padding-left:10px;
+}
+
+#tag{
+    grid-area:tag;
+    text-align:left;
+    font-family: sans-serif;
+}
+
+#upload-button{
+    grid-area:upload-button;
+}
+
+p1{
+    font-family: sans-serif;
+    font-size:20px;
+}
+
+p2{
+    font-family: sans-serif;
+    font-size:15px;
+    color:gray;
+}
+
+
+@media only screen and (min-width:1281px) {
+                #grid {
+                    grid-template-columns: repeat(4,350px);
+                    grid-template-rows: repeat(13,40px);
+                    padding-left: 600px;
+                    padding-right: 600px;
+                    grid-template-areas: 
+                        "menu-bar   menu-bar    menu-bar    menu-bar"
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          title       .           ."
+                        ".          venue       .           ."
+                        ".          description description ."
+                        ".          description description ."
+                        ".          tag         tag         ."
+                        ".          .           .           upload-button"
+                       
+                }
+            }
+                   
+@media only screen and (max-width:1281px) {
+                #grid {
+                    grid-template-columns: repeat(4,350px);
+                    grid-template-rows: repeat(13,40px);
+                    padding-left: 600px;
+                    padding-right: 600px;
+                    grid-template-areas: 
+                        "menu-bar   menu-bar    menu-bar    menu-bar"
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          upload      upload      ."
+                        ".          title       .           ."
+                        ".          venue       .           ."
+                        ".          description description ."
+                        ".          description description ."
+                        ".          tag         tag         ."
+                        ".          .           .           upload-button"
+                }
+            }
+
+@media only screen and (max-width: 720px) {
+                #grid {
+                    grid-template-columns: repeat(2,350px);
+                    grid-template-rows: repeat(13,40px);
+                    padding-left: 600px;
+                    padding-right: 600px;
+                    grid-template-areas: 
+                        "menu-bar   menu-bar"
+                        "upload      upload"
+                        "upload      upload"
+                        "upload      upload"
+                        "upload      upload"
+                        "upload      upload"
+                        "upload      upload"
+                        "title       ."
+                        "venue       ."
+                        "description description"
+                        "description description"
+                        "tag         tag"
+                        ".           upload-button"
+                }
+            }
+   
+}
+                        
+@media only screen and (max-width:320px) {
+                #grid {
+                   grid-template-columns: repeat(2,150px);
+                    grid-template-rows: repeat(13,40px);
+                    padding-left: 600px;
+                    padding-right: 600px;
+                    grid-template-areas: 
+                        "menu-bar   menu-bar"
+                        "upload      upload"
+                        "upload      upload"
+                        "upload      upload"
+                        "upload      upload"
+                        "upload      upload"
+                        "upload      upload"
+                        "title       ."
+                        "venue       ."
+                        "description description"
+                        "description description"
+                        "tag         tag"
+                        ".           upload-button"
+                }
+     p1{
+        font-size:15px;
+    }
+    p2{
+        font-size:11px;
+    }
+}
