@@ -2,10 +2,19 @@ body {
     display: grid;
 }
 
+#video-content {
+    color: yellow;
+}
+
 /*div organization*/
 
 .video-content {
     justify-content: center;
+}
+
+/*Menu Bar*/
+#menu-bar {
+    grid-area: menu-bar;
 }
 
 /*Cover Photo*/
