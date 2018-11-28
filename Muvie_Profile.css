@@ -1,5 +1,6 @@
 #content-grid {
     display: grid;
+    justify-content: center;
 }
 
 #video-content {
@@ -7,10 +8,6 @@
 }
 
 /*div organization*/
-
-.video-content {
-    justify-content: center;
-}
 
 /*Menu Bar*/
 #menu-bar {
@@ -119,15 +116,14 @@
     background-position: center; 
     background-size:cover;
     width:100%;
-    overflow-x:hidden;
-    
+    overflow-x:hidden;    
 }
 
 /*Breakpoints*/
 
 #content-grid{
         grid-template-columns: repeat(6, 200px);
-        grid-template-rows:400px;
+        grid-template-rows:200px;
         grid-template-areas: 
             "header header header header header header"
         }
