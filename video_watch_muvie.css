@@ -238,7 +238,7 @@ p5{
                     padding-left:80px;
                 }
                 p5{
-                    padding-left:150px;
+                    padding-left:100px;
                 }
                 
             }
@@ -279,8 +279,8 @@ p5{
                         "main        main     main      second"
                         "main        main     main      third"
                         "main        main     main      fourth"
-                        "rating1      rating2        .         fifth"
-                        ".           .        .         sixth"
+                        "rating1      rating1        .         fifth"
+                        "rating2      rating2        .         sixth"
                         ".           .        .         seventh"
                         ".           .        .         eighth"
                         ".           .        .         ninth"
@@ -288,19 +288,22 @@ p5{
                 } 
                 
             p1
-            {font-size:20px;
+            {font-size:17px;
             font-family:sans-serif;
             }
 
             p2{
-            font-size:13px;
+            font-size:15px;
             font-family:sans-serif;
             }
                 
-            #rating{
-            margin-top: 40px; 
-            
+                p3{
+                    font-size:15px;
                 }
+          
+                p4{
+                    font-size:13px;
+                }  
                 
             }
 
@@ -310,14 +313,16 @@ p5{
                     margin:auto;
                     grid-gap:10px;
                     grid-template-columns:repeat(2, 50%);
-                    grid-template-rows:20px, repeat(14, 40px);
+                    grid-template-rows:20px, repeat(16, 40px);
                     grid-template-areas: 
                         "menu-bar   menu-bar"
                         "main       main"
                         "main       main"
                         "main       main"
                         "main       main"
-                        "rating1     rating2"
+                        ".          ."
+                        "rating1    ."
+                        "rating2    ."
                         "first      ."
                         "second     ."
                         "third      ."
