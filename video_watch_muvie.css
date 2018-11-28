@@ -1,7 +1,7 @@
                 #grid {
                 display: grid;
                 justify-content: center;
-                grid-gap: 30px;
+                grid-gap: 15px;
                 grid-row-gap: 50px;
                 padding-left: 5%;
                 padding-right: 5%;
@@ -141,8 +141,7 @@ border-radius: 4px;
 
             #first {
                 grid-area: first;
-                
-                
+                  
             }
 
             #second {
@@ -190,21 +189,19 @@ border-radius: 4px;
             }
 
             p1
-            {font-size:25px;
+            {font-size:20px;
             font-family:sans-serif;
             }
 
             p2{
-            font-size:18px;
+            font-size:15px;
             font-family:sans-serif;
             }
 
 
-
             @media only screen and (min-width:1281px) {
                 #grid {
-                    margin:auto;
-                    grid-row-gap: 60px;
+                    grid-row-gap: 30px;
                     grid-template-columns: repeat(8,140px);
                     grid-template-rows: 50px, repeat(10,150px);
                     grid-template-areas: 
@@ -226,8 +223,7 @@ border-radius: 4px;
 
         @media only screen and (max-width: 1280px) {
                 #grid {
-                    margin:auto;
-                    grid-row-gap: 60px;
+                    grid-row-gap: 30px;
                     grid-template-columns: repeat(8, 140px);
                     grid-template-rows: 50px, repeat(10, 150px);
                     grid-template-areas: 
