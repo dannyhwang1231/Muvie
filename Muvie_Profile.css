@@ -26,6 +26,10 @@
     grid-area: description;
 }
 
+#channel-description p {
+    font-size: 10pt;
+}
+
 /*Cover Photo*/
 
 #cover-photo {
@@ -36,9 +40,13 @@
 
 #upload-button {
     grid-area: upload;
+    align-self: center;
 }
 
 /*My Uploads*/
+#lineup {
+    grid-area: lineup;
+}
 
 #upload-one {
     grid-area: Uone;
@@ -141,18 +149,30 @@
 
 #content-grid{
         grid-template-columns: repeat(6, 200px);
-        grid-template-rows:200px;
+        grid-template-rows:200px auto auto auto auto 200px;
         grid-template-areas: 
             "header header header header header header"
             ". channel channel . . upload"
-            ". description description . . ."
-            
+            ". description description description . upload"
+            "lineup lineup lineup lineup lineup lineup"           
         }
+
+.lineup {
+    width:100%; /* the lineup spans the full width of the space alotted */
+}
+
+.slick-slide {
+    padding:10px; /* spacing between video cards */
+}
+
+.slick-prev:before, .slick-next:before {
+    color:#000000; /* arrow color is red ... for now */
+}
 
 @media only screen and (min-width: 1281px) {
 
     .card {
-    min-height: 360px;
+    min-height: ;
         }
     
 }
