@@ -43,7 +43,22 @@
     align-self: center;
 }
 
+/*My Playlist*/
+#my-playlist {
+    grid-area: myplaylist;
+}
+
+/*Following*/
+#following {
+    grid-area: following;
+}
+
 /*My Uploads*/
+
+#my-uploads {
+    grid-area: myuploads;
+}
+
 #lineup {
     grid-area: lineup;
 }
@@ -154,7 +169,8 @@
             "header header header header header header"
             ". channel channel . . upload"
             ". description description description . upload"
-            "lineup lineup lineup lineup lineup lineup"           
+            "myuploads. . . . ."
+            "lineup lineup lineup lineup lineup lineup"     
         }
 
 .lineup {
