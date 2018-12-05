@@ -63,6 +63,14 @@
     grid-area: lineup;
 }
 
+#lineup2 {
+    grid-area: lineup2;
+}
+
+#lineup3 {
+    grid-area: lineup3;
+}
+
 #upload-one {
     grid-area: Uone;
 }
@@ -160,18 +168,6 @@
     overflow-x:hidden;    
 }
 
-/*Breakpoints*/
-
-#content-grid{
-        grid-template-columns: repeat(6, 200px);
-        grid-template-rows:200px auto auto auto auto 200px;
-        grid-template-areas: 
-            "header header header header header header"
-            ". channel channel . . upload"
-            ". description description description . upload"
-            "myuploads. . . . ."
-            "lineup lineup lineup lineup lineup lineup"     
-        }
 
 .lineup {
     width:100%; /* the lineup spans the full width of the space alotted */
@@ -185,10 +181,94 @@
     color:#000000; /* arrow color is red ... for now */
 }
 
-@media only screen and (min-width: 1281px) {
 
-    .card {
-    min-height: ;
+/*Breakpoints*/
+@media only screen and (min-width: 1281px) {
+    
+    #content-grid{
+        grid-template-columns: repeat(6, 200px);
+        grid-template-rows: 200px auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "header header header header header header"
+            ". channel channel . . upload"
+            ". description description description . upload"
+            "myuploads . . . . ."
+            "lineup lineup lineup lineup lineup lineup"
+            "myplaylist . . . . ."
+            "lineup2 lineup2 lineup2 lineup2 lineup2 lineup2"
+            "following . . . . ."
+            "lineup3 lineup3 lineup3 lineup3 lineup3 lineup3"
+            
         }
+        .card {
+    min-height: 300px;
+        }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    
+    #content-grid{
+        grid-template-columns: repeat(6, 200px);
+        grid-template-rows: 200px auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "header header header header header header"
+            ". channel channel . . upload"
+            ". description description description . upload"
+            "myuploads . . . . ."
+            "lineup lineup lineup lineup lineup lineup"   
+            "myplaylist . . . . ."
+            "lineup2 lineup2 lineup2 lineup2 lineup2 lineup2"
+            "following . . . . ."
+            "lineup3 lineup3 lineup3 lineup3 lineup3 lineup3"
+            
+        }
+            .card {
+    min-height: 300px;
+        }
+            }
+
+
+@media only screen and (max-width: 720px) {
+    
+
+    #content-grid{
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 200px auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "header header header header"
+            "channel channel . upload"
+            "description description description upload"
+            "myuploads . . ."
+            "lineup lineup lineup lineup"
+            "myplaylist . . ."
+            "lineup2 lineup2 lineup2 lineup2"
+            "following . . ."
+            "lineup3 lineup3 lineup3 lineup3"
+        }
+
+        .card {
+    min-height: 320px;
+        }
+    
+}
+
+@media only screen and (min-width: 320px) {
+    
+    #content-grid{
+        grid-template-columns: repeat(2, 160px);
+        grid-template-rows: 200px auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "header header"
+            "channel upload"
+            "description description"
+            "myuploads ."
+            "lineup lineup"
+            "myplaylist ."
+            "lineup2 lineup2"
+            "following ."
+            "lineup3 lineup3"
+            
+    }
     
 }

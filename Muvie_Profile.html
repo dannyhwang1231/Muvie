@@ -20,7 +20,7 @@
         <div class="sticky-top">
             <div id="menu-bar">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">M&uuml;vie</a>
+                    <a class="navbar-brand" href="Muvie_mainpage_draft1.html">M&uuml;vie</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -153,14 +153,11 @@
                     </a>
                 </div>
             </div>
-
-
-            
-        </div>    
-        
-        <!--My Playlist-->
-            <div id="lineup" class="lineup">
-                <div id="my-playlist">
+                    <!--My Playlist-->
+            <div id="my-playlist">
+                <h5>My Playlist</h5>
+            </div>
+            <div id="lineup2" class="lineup">
                     <div id="playlist-one">
                         <a href="https://youtu.be/TmjGdJD8i5E"  target="_blank">
                             <div class="card">
@@ -238,11 +235,13 @@
                             </div>
                         </a>
                     </div>
-                </div>
             </div>
-        <!--Following-->
-            <div id="lineup" class="lineup">
-                <div id="following">
+            
+            <div id="following">
+                <h5>Following</h5>
+            </div>
+                    <!--Following-->
+            <div id="lineup3" class="lineup">
                     <div id="following-one">
                         <a href="https://youtu.be/TmjGdJD8i5E"  target="_blank">
                             <div class="card">
@@ -320,8 +319,14 @@
                             </div>
                         </a>
                     </div>
-                </div>
             </div>
+            
+            
+            
+        </div>    
+        
+        
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS, then Slick -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -334,7 +339,7 @@
         
           <script type="text/javascript">
               $(document).ready(function(){
-                  $('.lineup').slick({
+                  $('#lineup, #lineup2, #lineup3').slick({
                       dots: true,
                       infinite: true,
                       speed: 300,
@@ -342,7 +347,7 @@
                       slidesToScroll: 4,
                       responsive: [
                         {
-                          breakpoint: 1024,
+                          breakpoint: 1280,
                           settings: {
                             slidesToShow: 3,
                             slidesToScroll: 3,
@@ -351,14 +356,14 @@
                           }
                         },
                         {
-                          breakpoint: 600,
+                          breakpoint: 720,
                           settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2
                           }
                         },
                         {
-                          breakpoint: 480,
+                          breakpoint: 320,
                           settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1
@@ -369,6 +374,8 @@
                         // instead of a settings object
                       ]
                     });
+                  
+                    
               });
 				
         </script>        
