@@ -140,6 +140,10 @@ border-radius: 4px;
     grid-area:rating2;
 }
 
+#overall-70{
+    grid-area:overall-70;
+}
+
             #first {
                 grid-area: first;
                   
@@ -226,7 +230,7 @@ p5{
                         "main       main        main        main        main        main      second    second"
                         "main       main        main        main        main        main      third     third"
                         "rating1    rating1     rating2     rating2     .           .         fourth    fourth"
-                        ".          .           .           .           .           .         fifth     fifth"
+                        "overall-70  overall-70  .           .           .           .         fifth     fifth"
                         ".          .           .           .           .           .          sixth     sixth"
                         ".          .           .           .           .           .         seventh   seventh"
                         ".          .           .           .           .           .         eighth    eighth"
@@ -255,7 +259,7 @@ p5{
                         "main       main        main        main        main        main      second    second"
                         "main       main        main        main        main        main      third     third"
                         "rating1     rating1    rating2     rating2     .           .          fourth    fourth"
-                        ".          .           .           .           .           .           fifth     fifth"
+                        "overall-70  overall-70  .           .           .           .         fifth     fifth"
                         ".          .           .           .           .           .          sixth     sixth"
                         ".          .           .           .           .           .         seventh   seventh"
                         ".          .           .           .           .           .         eighth    eighth"
