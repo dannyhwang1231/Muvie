@@ -178,8 +178,12 @@
 }
 
 .slick-prev:before, .slick-next:before {
-    color:#000000; /* arrow color is red ... for now */
+    color:#000000;
 }
+
+        .card {
+    min-height: 300px;
+        }
 
 
 /*Breakpoints*/
@@ -200,16 +204,13 @@
             "lineup3 lineup3 lineup3 lineup3 lineup3 lineup3"
             
         }
-        .card {
-    min-height: 300px;
-        }
 
 }
 
 @media only screen and (max-width: 1280px) {
     
     #content-grid{
-        grid-template-columns: repeat(6, 200px);
+        grid-template-columns: repeat(6, 15%);
         grid-template-rows: 200px auto auto auto auto auto auto auto auto;
         grid-template-areas: 
             "header header header header header header"
@@ -223,17 +224,14 @@
             "lineup3 lineup3 lineup3 lineup3 lineup3 lineup3"
             
         }
-            .card {
-    min-height: 300px;
-        }
-            }
 
+            }
 
 @media only screen and (max-width: 720px) {
     
-
     #content-grid{
-        grid-template-columns: repeat(4, 200px);
+        grid-template-columns: repeat(4, 25%);
+        grid-column-gap:0;
         grid-template-rows: 200px auto auto auto auto auto auto auto auto;
         grid-template-areas: 
             "header header header header"
@@ -251,12 +249,17 @@
     min-height: 320px;
         }
     
+    #channel-name, #channel-description, #my-uploads, #following, #my-playlist {
+        padding:20px;
+    }
+    
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
     
     #content-grid{
         grid-template-columns: repeat(2, 160px);
+        grid-column-gap: 0;
         grid-template-rows: 200px auto auto auto auto auto auto auto auto;
         grid-template-areas: 
             "header header"
@@ -269,6 +272,10 @@
             "following ."
             "lineup3 lineup3"
             
+    }
+    
+        #channel-name, #channel-description, #my-uploads, #following, #my-playlist {
+        padding:20px;
     }
     
 }
