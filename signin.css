@@ -4,27 +4,20 @@ body {
     text-align: center;
 }
 
-#LoginForm {
+#LoginForm{
     color: black;
     font-family: Arial;
-  font-size: 30px;
-  padding-top: 300px;
-  padding-bottom: 400px;
-}
-
-#LoginForm{
-    padding:40px;
+  font-size: 70px;
+  font-style: bold;
+  padding-top: 100px;
+  text-align: center;
 }
 
 .login-form {
-    padding-bottom: 60px;
+    padding-bottom: 5px;
 }
 
-h1 { 
-height: 20px;
- }
-
-.form-heading { color:black; font-size:40px;}
+.form-heading { color:black; font-size:100px;}
 .panel h2{ color:black; font-size:18px; margin:0 0 8px 0;}
 .panel p { color:black; font-size:14px; margin-bottom:30px; line-height:24px;}
 .login-form .form-control {
@@ -34,7 +27,7 @@ height: 20px;
   font-size: 14px;
   height: 50px;
   line-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .main-div {
   background: #ffffff none repeat scroll 0 0;
@@ -58,15 +51,15 @@ height: 20px;
   width: 100%;
   height: 50px;
   line-height: 50px;
-  padding: 0;
 }
 .forgot {
-  text-align: center; margin-bottom:20px;
+  text-align: center; 
+  margin-bottom: 10px;
 }
 
 .botto-text {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 25px;
   margin: auto;
 }
 .login-form .btn.btn-primary.reset {
@@ -76,24 +69,31 @@ height: 20px;
 
 
 #carousel {
-    background-color: #20B2AA;
+    background-color: black;
     color: white;
+    font-size: 40px;
   font-size: 15px;
-  padding: 200px;
-  padding-top: 300px;
-  padding-bottom: 300px;
-  border: 2px solid white;
-  align-content: horizontal;
+  padding: 50px;
 }
 
 #description {
-    background-color: #BA55D3;
-    color: white;
- font-size: 15px;
+    background-color: white;
+    color: black;
+ font-size: 35px;
   padding: 500px;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 10px;
   border: 2px solid white;
+}
+
+p {
+  font-size: 20px;
+}
+
+.btnbtn-success {
+  font-size: 40px;
+  color: #4CAF50;
+  border: none;
 }
 
 @media only screen and (min-width: 
