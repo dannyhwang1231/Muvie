@@ -7,18 +7,53 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Muvie</title>
+        <title>M&uuml;vie</title>
         <link type="text/css" rel="stylesheet" href="Muvie_mainpage_draft1.css">
+        <!--sample change-->
     </head>
     
     <body>
-        <div id="grid">
         <!--menu bar-->
-            <div id="menu-bar"></div>
+            <!--git branch test-->
+        <div class="sticky-top">
+            <div id="menu-bar">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">M&uuml;vie</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="Muvie_Profile.html">Profile<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Trending Now</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Concerts</a>
+                                    <a class="dropdown-item" href="#">Studio Live</a>
+                                    <a class="dropdown-item" href="#">Busking</a>
+                                    <a class="dropdown-item" href="#">Miscellaneous</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Music Videos</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
         <!--video thumbnails-->
-            <div class="video_content"></div>
+        <div class="loader">
+            <div id="video_content">
                 <div id="thumbnail-one">
-                    <a href="https://youtu.be/c3L1byBs_Ic"  target="_blank">
+                    <a href="video_watch_muvie.html">
                         <div class="card">
                             <img class="card-img-top" src="https://i.ytimg.com/vi/TmjGdJD8i5E/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB7Hv6hn-usEOwcbgnLnJtC_C1xlw" alt="Thumbnail-one">
                             <div class="card-body">
@@ -116,25 +151,266 @@
                         </div>
                     </a>
                 </div>
-            
+            </div>
         </div>
-            
+<!--infinite scroll 1st -->
+    <div class="loader">
+        <div id="video_content_one">    
+            <div id="thumbnail-oneA">
+                    <a href="https://youtu.be/c3L1byBs_Ic"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/TmjGdJD8i5E/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB7Hv6hn-usEOwcbgnLnJtC_C1xlw" alt="Thumbnail-oneA">
+                            <div class="card-body">
+                                <h5 class="card-title">SIRUP - SWIM / Music Bar Session</h5>
+                                <p class ="card-text">Live at Tokyo Sounds</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-twoA">
+                    <a href="https://youtu.be/TmjGdJD8i5E"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/c3L1byBs_Ic/maxresdefault.jpg" alt="Thumbnail-twoA">
+                            <div class="card-body">
+                                <h5 class="card-title">Nothing But Thieves - Soda</h5>
+                                <p class ="card-text">Live in Hamburg</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-threeA">
+                    <a href="https://youtu.be/Hsmclk6clqw"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://img.cache.vevo.com/thumb/cms/77e3bb124ac30ec31aaee671649f270f2017121112831134.jpg" alt="Thumbnail-threeA">
+                            <div class="card-body">
+                                <h5 class="card-title">The Kooks - Forgive & Forget</h5>
+                                <p class ="card-text">Live at Hansa Studios</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-fourA">
+                    <a href="https://youtu.be/VFMy1aO_LMU"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/VFMy1aO_LMU/maxresdefault.jpg" alt="Thumbnail-fourA">
+                            <div class="card-body">
+                                <h5 class="card-title">Bobby Caldwell - What You Won't Do For Love</h5>
+                                <p class ="card-text">Live in Miami Beach</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-fiveA">
+                    <a href="https://youtu.be/WQm4R0LM2mE"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/WQm4R0LM2mE/maxresdefault.jpg" alt="Thumbnail-fiveA">
+                            <div class="card-body">
+                                <h5 class="card-title">Vulfpeck - Birds of a Feather, We Rock Together</h5>
+                                <p class ="card-text">Live Music Video</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-sixA">
+                    <a href="https://youtu.be/p1jW-xJlIA8"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/p1jW-xJlIA8/maxresdefault.jpg" alt="Thumbnail-sixA">
+                            <div class="card-body">
+                                <h5 class="card-title">Mura Masa, NAO - Complicated</h5>
+                                <p class ="card-text">Acoustic Live</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-sevenA">
+                    <a href="https://youtu.be/7-Vgkyc6MTk"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/7-Vgkyc6MTk/maxresdefault.jpg" alt="Thumbnail-sevenA">
+                            <div class="card-body">
+                                <h5 class="card-title">Rhye - Please</h5>
+                                <p class ="card-text">Mahogany Session</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-eightA">
+                    <a href="https://youtu.be/g5DowpZgbN8"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/g5DowpZgbN8/maxresdefault.jpg" alt="Thumbnail-eightA">
+                            <div class="card-body">
+                                <h5 class="card-title">9m88 - BB88</h5>
+                                <p class ="card-text">iCover Session</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-nineA">
+                    <a href="https://youtu.be/0iTCkf83Tkk"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/0iTCkf83Tkk/maxresdefault.jpg" alt="Thumbnail-nineA">
+                            <div class="card-body">
+                                <h5 class="card-title">AshRock - Cruising</h5>
+                                <p class ="card-text">Studio AshRock Live</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>    
+<!-- infinite scroll 2nd -->
+    <div class="loader">
+        <div id="video_content_two">    
+            <div id="thumbnail-oneB">
+                    <a href="https://youtu.be/c3L1byBs_Ic"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/TmjGdJD8i5E/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB7Hv6hn-usEOwcbgnLnJtC_C1xlw" alt="Thumbnail-oneB">
+                            <div class="card-body">
+                                <h5 class="card-title">SIRUP - SWIM / Music Bar Session</h5>
+                                <p class ="card-text">Live at Tokyo Sounds</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-twoB">
+                    <a href="https://youtu.be/TmjGdJD8i5E"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/c3L1byBs_Ic/maxresdefault.jpg" alt="Thumbnail-twoB">
+                            <div class="card-body">
+                                <h5 class="card-title">Nothing But Thieves - Soda</h5>
+                                <p class ="card-text">Live in Hamburg</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-threeB">
+                    <a href="https://youtu.be/Hsmclk6clqw"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://img.cache.vevo.com/thumb/cms/77e3bb124ac30ec31aaee671649f270f2017121112831134.jpg" alt="Thumbnail-threeB">
+                            <div class="card-body">
+                                <h5 class="card-title">The Kooks - Forgive & Forget</h5>
+                                <p class ="card-text">Live at Hansa Studios</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-fourB">
+                    <a href="https://youtu.be/VFMy1aO_LMU"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/VFMy1aO_LMU/maxresdefault.jpg" alt="Thumbnail-fourB">
+                            <div class="card-body">
+                                <h5 class="card-title">Bobby Caldwell - What You Won't Do For Love</h5>
+                                <p class ="card-text">Live in Miami Beach</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-fiveB">
+                    <a href="https://youtu.be/WQm4R0LM2mE"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/WQm4R0LM2mE/maxresdefault.jpg" alt="Thumbnail-fiveB">
+                            <div class="card-body">
+                                <h5 class="card-title">Vulfpeck - Birds of a Feather, We Rock Together</h5>
+                                <p class ="card-text">Live Music Video</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-sixB">
+                    <a href="https://youtu.be/p1jW-xJlIA8"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/p1jW-xJlIA8/maxresdefault.jpg" alt="Thumbnail-sixB">
+                            <div class="card-body">
+                                <h5 class="card-title">Mura Masa, NAO - Complicated</h5>
+                                <p class ="card-text">Acoustic Live</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-sevenB">
+                    <a href="https://youtu.be/7-Vgkyc6MTk"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/7-Vgkyc6MTk/maxresdefault.jpg" alt="Thumbnail-sevenB">
+                            <div class="card-body">
+                                <h5 class="card-title">Rhye - Please</h5>
+                                <p class ="card-text">Mahogany Session</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-eightB">
+                    <a href="https://youtu.be/g5DowpZgbN8"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/g5DowpZgbN8/maxresdefault.jpg" alt="Thumbnail-eightB">
+                            <div class="card-body">
+                                <h5 class="card-title">9m88 - BB88</h5>
+                                <p class ="card-text">iCover Session</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="thumbnail-nineB">
+                    <a href="https://youtu.be/0iTCkf83Tkk"  target="_blank">
+                        <div class="card">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/0iTCkf83Tkk/maxresdefault.jpg" alt="Thumbnail-nineB">
+                            <div class="card-body">
+                                <h5 class="card-title">AshRock - Cruising</h5>
+                                <p class ="card-text">Studio AshRock Live</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>        
+         </div>         
+           <!--Load More + Back To Top-->
+
+<a href="#" id="loadMore">Load More</a>     
+<p class="totop"> 
+    <a href="#top">Back to top</a> 
+</p>
+
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <script>
-        $(document).ready(
-            function(){
-        
-                // your javascript code goes here
-                
-                
-            }
-        );
+/*
+	Load more content with jQuery - May 21, 2013
+	(c) 2013 @ElmahdiMahmoud
+*/   
+
+$(function () {
+    $(".loader").slice(0, 1).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".loader:hidden").slice(0, 1).slideDown();
+        if ($(".loader:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 500);
+    });
+});
+
+$('a[href=#top]').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+        $('.totop a').fadeIn();
+    } else {
+        $('.totop a').fadeOut();
+    }
+});
+
+        </script>
             
     </body>
     
