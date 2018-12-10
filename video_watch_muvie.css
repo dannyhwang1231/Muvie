@@ -3,6 +3,7 @@
                 justify-content: center;
                 grid-gap: 15px;
                 grid-row-gap: 50px;
+                grid-column-gap: 30px;
                 padding-left: 5%;
                 padding-right: 5%;
             }
@@ -11,16 +12,12 @@
                 grid-area: menu-bar;
                 background-color: black;
             }
-
-            #rating {
-                grid-area: rating;
-                background-color:aqua;
-            }
             
             #main {
                 grid-area: main;
                 border: 2px gray;
             }
+
 
 
 * {
@@ -134,10 +131,18 @@ border-radius: 4px;
 }
 
 
-
-            #rating{
-                grid-area: rating;
+            #rating1{
+                grid-area: rating1;
+               
             }
+
+#rating2{
+    grid-area:rating2;
+}
+
+#overall-70{
+    grid-area:overall-70;
+}
 
             #first {
                 grid-area: first;
@@ -189,7 +194,7 @@ border-radius: 4px;
             }
 
             p1
-            {font-size:20px;
+            {font-size:24px;
             font-family:sans-serif;
             }
 
@@ -197,6 +202,21 @@ border-radius: 4px;
             font-size:15px;
             font-family:sans-serif;
             }
+
+            p3{
+                font-size:20px;
+                font-family:sans-serif;
+            }
+
+p4{
+    font-size:18px;
+    font-family:sans-serif;
+}
+
+p5{
+    font-size:18px;
+    font-family: sans-serif;
+}
 
 
             @media only screen and (min-width:1281px) {
@@ -209,8 +229,8 @@ border-radius: 4px;
                         "main       main        main        main        main        main      first     first"
                         "main       main        main        main        main        main      second    second"
                         "main       main        main        main        main        main      third     third"
-                        "rating     rating      rating      rating      rating      rating      fourth    fourth"
-                        ".          .           .           .           .           .           fifth     fifth"
+                        "rating1    rating1     rating2     rating2     .           .         fourth    fourth"
+                        "overall-70  overall-70  .           .           .           .         fifth     fifth"
                         ".          .           .           .           .           .          sixth     sixth"
                         ".          .           .           .           .           .         seventh   seventh"
                         ".          .           .           .           .           .         eighth    eighth"
@@ -218,6 +238,13 @@ border-radius: 4px;
                         ".          .           .           .           .           .         tenth     tenth"
                         
                 }
+                p4{
+                    padding-left:80px;
+                }
+                p5{
+                    padding-left:100px;
+                }
+                
             }
 
 
@@ -231,8 +258,8 @@ border-radius: 4px;
                         "main       main        main        main        main        main      first     first"
                         "main       main        main        main        main        main      second    second"
                         "main       main        main        main        main        main      third     third"
-                        "rating     rating      rating      rating      rating      rating      fourth    fourth"
-                        ".          .           .           .           .           .           fifth     fifth"
+                        "rating1     rating1    rating2     rating2     .           .          fourth    fourth"
+                        "overall-70  overall-70  .           .           .           .         fifth     fifth"
                         ".          .           .           .           .           .          sixth     sixth"
                         ".          .           .           .           .           .         seventh   seventh"
                         ".          .           .           .           .           .         eighth    eighth"
@@ -256,8 +283,8 @@ border-radius: 4px;
                         "main        main     main      second"
                         "main        main     main      third"
                         "main        main     main      fourth"
-                        "rating      rating   rating    fifth"
-                        ".           .        .         sixth"
+                        "rating1      rating1        .         fifth"
+                        "rating2      rating2        .         sixth"
                         ".           .        .         seventh"
                         ".           .        .         eighth"
                         ".           .        .         ninth"
@@ -265,18 +292,23 @@ border-radius: 4px;
                 } 
                 
             p1
-            {font-size:20px;
+            {font-size:17px;
             font-family:sans-serif;
             }
 
             p2{
-            font-size:13px;
+            font-size:15px;
             font-family:sans-serif;
             }
                 
-            #rating{
-            margin-top: 40px;        
+                p3{
+                    font-size:15px;
                 }
+          
+                p4{
+                    font-size:13px;
+                }  
+                
             }
 
 
@@ -285,14 +317,16 @@ border-radius: 4px;
                     margin:auto;
                     grid-gap:10px;
                     grid-template-columns:repeat(2, 50%);
-                    grid-template-rows:20px, repeat(14, 40px);
+                    grid-template-rows:20px, repeat(16, 40px);
                     grid-template-areas: 
                         "menu-bar   menu-bar"
                         "main       main"
                         "main       main"
                         "main       main"
                         "main       main"
-                        "rating     rating"
+                        ".          ."
+                        "rating1    ."
+                        "rating2    ."
                         "first      ."
                         "second     ."
                         "third      ."

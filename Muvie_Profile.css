@@ -1,5 +1,7 @@
-body {
+#content-grid {
     display: grid;
+    justify-content: center;
+    grid-gap: 10px;
 }
 
 #video-content {
@@ -8,13 +10,24 @@ body {
 
 /*div organization*/
 
-.video-content {
-    justify-content: center;
-}
-
 /*Menu Bar*/
 #menu-bar {
     grid-area: menu-bar;
+}
+
+/*Channel Name*/
+#channel-name {
+    grid-area: channel;
+}
+
+/*Channel Description*/
+
+#channel-description {
+    grid-area: description;
+}
+
+#channel-description p {
+    font-size: 10pt;
 }
 
 /*Cover Photo*/
@@ -23,7 +36,40 @@ body {
     grid-area: header;
 }
 
+/*Upload Button*/
+
+#upload-button {
+    grid-area: upload;
+    align-self: center;
+}
+
+/*My Playlist*/
+#my-playlist {
+    grid-area: myplaylist;
+}
+
+/*Following*/
+#following {
+    grid-area: following;
+}
+
 /*My Uploads*/
+
+#my-uploads {
+    grid-area: myuploads;
+}
+
+#lineup {
+    grid-area: lineup;
+}
+
+#lineup2 {
+    grid-area: lineup2;
+}
+
+#lineup3 {
+    grid-area: lineup3;
+}
 
 #upload-one {
     grid-area: Uone;
@@ -113,21 +159,123 @@ body {
     grid-area: Fseven;
 }
 
-/*Breakpoints*/
+#cover-photo {
+    background-image:url(https://images.unsplash.com/photo-1522039176993-33264c54767e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=54d3e4bdd2930c7d434c3b59a8702dbe&auto=format&fit=crop&w=1652&q=80);
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size:cover;
+    width:100%;
+    overflow-x:hidden;    
+}
 
-@media only screen and (min-width: 1281px) {
 
-    .card {
-    min-height: 360px;
+.lineup {
+    width:100%; /* the lineup spans the full width of the space alotted */
+}
+
+.slick-slide {
+    padding:10px; /* spacing between video cards */
+}
+
+.slick-prev:before, .slick-next:before {
+    color:#000000;
+}
+
+        .card {
+    min-height: 300px;
         }
 
-    #video_content{
+
+/*Breakpoints*/
+@media only screen and (min-width: 1281px) {
+    
+    #content-grid{
         grid-template-columns: repeat(6, 200px);
+        grid-template-rows: 200px auto auto auto auto auto auto auto auto;
         grid-template-areas: 
             "header header header header header header"
-            "one    one    two    two    three  three"
-            "four   four   five   five   six    six"
-            "seven  seven  eight  eight  nine   nine"
+            ". channel channel . . upload"
+            ". description description description . upload"
+            "myuploads . . . . ."
+            "lineup lineup lineup lineup lineup lineup"
+            "myplaylist . . . . ."
+            "lineup2 lineup2 lineup2 lineup2 lineup2 lineup2"
+            "following . . . . ."
+            "lineup3 lineup3 lineup3 lineup3 lineup3 lineup3"
+            
         }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    
+    #content-grid{
+        grid-template-columns: repeat(6, 15%);
+        grid-template-rows: 200px auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "header header header header header header"
+            ". channel channel . . upload"
+            ". description description description . upload"
+            "myuploads . . . . ."
+            "lineup lineup lineup lineup lineup lineup"   
+            "myplaylist . . . . ."
+            "lineup2 lineup2 lineup2 lineup2 lineup2 lineup2"
+            "following . . . . ."
+            "lineup3 lineup3 lineup3 lineup3 lineup3 lineup3"
+            
+        }
+
+            }
+
+@media only screen and (max-width: 720px) {
+    
+    #content-grid{
+        grid-template-columns: repeat(4, 25%);
+        grid-column-gap:0;
+        grid-template-rows: 200px auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "header header header header"
+            "channel channel . upload"
+            "description description description upload"
+            "myuploads . . ."
+            "lineup lineup lineup lineup"
+            "myplaylist . . ."
+            "lineup2 lineup2 lineup2 lineup2"
+            "following . . ."
+            "lineup3 lineup3 lineup3 lineup3"
+        }
+
+        .card {
+    min-height: 320px;
+        }
+    
+    #channel-name, #channel-description, #my-uploads, #following, #my-playlist {
+        padding:20px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    
+    #content-grid{
+        grid-template-columns: repeat(2, 160px);
+        grid-column-gap: 0;
+        grid-template-rows: 200px auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "header header"
+            "channel upload"
+            "description description"
+            "myuploads ."
+            "lineup lineup"
+            "myplaylist ."
+            "lineup2 lineup2"
+            "following ."
+            "lineup3 lineup3"
+            
+    }
+    
+        #channel-name, #channel-description, #my-uploads, #following, #my-playlist {
+        padding:20px;
+    }
     
 }
