@@ -89,7 +89,7 @@ body{
   width:35px;
   border-radius: 90px 0 0 90px;
   top: 50%;
-  -webkit-transform: translate(0,-50%);
+-webkit-transform: translate(0,-50%);
   -ms-transform: translate(0,-50%);
   transform: translate(0,-50%);
   -moz-border-radius: 90px 0 0 90px;
@@ -156,12 +156,13 @@ body{
   padding:15px 20px 15px;
   }
 }
-@media screen and (min-width: 992px) {
- .carousel-caption {
-    font-size: 18px;
-    padding:15px 20px 15px;
-  }
-}
 
+@media only screen and (max-width: 320px) {
+    
+.video-container {
+width: 25%;
+position: relative;
+    }
+}
 
 
